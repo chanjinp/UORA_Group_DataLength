@@ -61,7 +61,7 @@ RU_Success_results = []
 RU_coll_results = []
 
 # bandwidth
-bandwith = 80
+bandwidth = 80
 
 # graph x
 x_list = []
@@ -398,7 +398,7 @@ def main():
         for k in range(0, NUM_SIM):  # 시뮬레이션 횟수
             stationList.clear()  # stationlist 초기화
             groupList.clear()
-            createGroup(bandwith)
+            createGroup(bandwidth)
             createSTA(i)  # User의 수가 1일 때부터 100일 때까지 반복
             for j in range(0, NUM_DTI):
                 selected_group = j % group_num # 0 ~ 5까지 반복
